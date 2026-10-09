@@ -1,0 +1,32 @@
+name: Bug report
+description: Report a reproducible problem
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Provide the smallest reproducible report possible. Do not include secrets or sensitive data."
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction
+      description: Exact steps, inputs, environment, or minimal fixture needed to reproduce the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Logs, validation output, screenshots, or links that help verify the report.
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, runtime/browser, version/commit, and other relevant context.

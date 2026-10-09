@@ -1,0 +1,29 @@
+name: Improvement proposal
+description: Propose a bounded improvement
+title: "[Proposal] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: Need
+      description: What concrete problem or limitation should be addressed?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe the smallest useful change.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Expected benefit and validation
+      description: How would we know the proposal works? What result would falsify it?
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints / risks
+      description: Compatibility, privacy, security, maintenance, or scope concerns.
